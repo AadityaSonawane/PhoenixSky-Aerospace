@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="html">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>PhoenixSky Aerospace</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="./assets/logo2-modified.png" rel="icon" type="svg"/>
+</head>
+
+<body>
+	<div id="pseudo"></div>
+	<div class="main_container" id="blur">
+	<div class="main_content">
+	<header class="header" >
+		<div class="titleDiv" id="titleDiv">
+			<img src="./assets/logo2-modified.png" id="logo" alt="Logo">
+			<button class="title">PhoenixSky Aerospace</button>
+		</div>
+		<div class="navDiv" id="navDiv">
+			<nav class="navigationPane">
+				<ul style="height: 9.5vh;">
+					<li class="nav_bar_list_items">
+						<span onclick="about_us()" class="navigators_butt_ico"><img src="./assets/icon/about_us.svg"></span>
+						<button class="navigators_butt" onclick="about_us()">About</button> 
+					</li>
+					<li class="nav_bar_list_items">
+						<span onclick="toggleSocialMediaPopup()" class="navigators_butt_ico"><img src="./assets/icon/join_us.svg"></span>
+						<button class="navigators_butt" id="join_us" onclick="toggleSocialMediaPopup()">Join Us</button> 
+					</li>
+					<li class="nav_bar_list_items">
+						<span onclick="our_projects()" class="navigators_butt_ico"><img src="./assets/icon/our_projects.svg"></span>
+						<button class="navigators_butt" onclick="our_projects()">Our Projects</button>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="contact_usDiv" id="contact_usDiv">
+			<div class="contact_usSubDiv" onclick="contact_us()">
+				<span onclick="contact_us()" class="navigators_butt" id="contact_us_img"><img src="./assets/icon/contact_us.svg" style="width: 30px;"></span>
+				<button id="contact_us" class="navigators_butt" style="margin-top: 10px;" onclick="contact_us()">&nbsp;Contact</button>
+			</div>
+		</div>
+		<div class="navMobileDiv" id="navMobileDiv">
+			<div class="navMobileSubDiv" onclick="open_navPane()">
+				<span onclick="toggleNavPane()" class="navigators_butt" id="contact_us_img"><img src="./assets/icon/hamburger.svg" style="width: 30px;"></span>
+			</div>
+			<ul id="sidebar">
+				<li style="justify-content: flex-end; display: flex; margin-bottom: 25vh; width: 90%;">
+					<span onclick="toggleNavPane()" class="navigators_butt_ico" style="align-self: center;"><img src="./assets/icon/close.svg"></span>
+				</li>
+				<li class="nav_bar_list_items">
+					<span onclick="about_us()" class="navigators_butt_ico"><img src="./assets/icon/about_us.svg"></span>
+					<button class="navigators_butt" onclick="about_us()">About</button> 
+				</li>
+				<li class="nav_bar_list_items">
+					<span onclick="toggleSocialMediaPopup()" class="navigators_butt_ico"><img src="./assets/icon/join_us.svg"></span>
+					<button class="navigators_butt" id="join_us" onclick="toggleSocialMediaPopup()">Join Us</button> 					
+				</li>
+				<li class="nav_bar_list_items">
+					<span onclick="our_projects()" class="navigators_butt_ico"><img src="./assets/icon/our_projects.svg"></span>
+					<button class="navigators_butt" onclick="our_projects()">Our Projects</button>
+				</li>
+			</ul>
+		</div>
+	</header>
+
+
+
+	<main class="main">
+		<!-- Main Content Here -->
+	</main>
+
+
+
+	<footer class="footer">
+		<center>
+			<hr>
+			<h3>Copyright © 2024 by PhoenixSky Aerospace. All rights reserved.</h3> 
+		</center>
+	</footer>
+	</div>
+	</div>
+
+	<div id="popup">
+		<img id="closeButton" onclick="toggleSocialMediaPopup()" src="./assets/icon/close.svg">
+		<div class="popup_main_div">
+			<div id="popup_title_div">
+				<img class="popup_title_icon" src="./assets/icon/join_us.svg">
+				<text class="popup_title">Join Us</text>
+				
+			</div>
+
+			<div class="popup_content_main_div">
+				
+				<div onclick="openYoutube()" class="popup_content_div">
+					<img class="popup_content_icon" src="./assets/icon/youtube.svg">
+					<text class="popup_content_title">Youtube</text>
+				</div>
+
+				<div onclick="openDiscord()" class="popup_content_div">
+					<img class="popup_content_icon" src="./assets/icon/discord.svg">
+					<text class="popup_content_title">Discord</text>
+				</div>
+
+				<div onclick="openInstagram()" class="popup_content_div">
+					<img class="popup_content_icon" src="./assets/icon/instagram.svg">
+					<text class="popup_content_title">Instagram</text>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
