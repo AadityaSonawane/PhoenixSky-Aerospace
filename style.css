@@ -196,7 +196,7 @@ ul{
   vertical-align: middle;
   padding: 5px;
   width: fit-content;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   border-radius: 15px;
 }
 
@@ -287,7 +287,7 @@ ul{
   align-self: self-end;
   aspect-ratio: 1/1;
   border-width: 0;
-  width:20px;
+  width:15px;
   float: right;
   margin: 5px;
 }
@@ -311,7 +311,7 @@ ul{
   justify-content: center;
 }
 
-.popup_title_icon{
+#popup_title_icon{
   aspect-ratio: 1/1;
   width: 60px;
   vertical-align: middle;
@@ -334,7 +334,7 @@ ul{
   float: right;
 }
 
-.popup_content_main_div{
+#popup_content_main_div{
   display:inline-flex;
   flex-direction:row;
   justify-content: center;

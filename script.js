@@ -51,8 +51,16 @@ function about_us(){
 }
 
 function toggleSocialMediaPopup(){
-    document.getElementById("blur").classList.toggle("active");
-    document.getElementById("popup").classList.toggle("active");
+    if(isMobile()){
+        document.getElementById("popup").style.width = "85vw";
+        document.getElementById("popup_main_div").style.width = "85vw";
+        document.getElementById("popup_content_main_div").style.width = "80vw";
+        document.getElementById("blur").classList.toggle("active");
+        document.getElementById("popup").classList.toggle("active");
+    }else{
+        document.getElementById("blur").classList.toggle("active");
+        document.getElementById("popup").classList.toggle("active");
+    }
 }
 
 function our_projects(){
