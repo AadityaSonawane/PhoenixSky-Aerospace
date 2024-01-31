@@ -25,6 +25,13 @@ function detectDeviceChange(){
         document.getElementById("logo").style.marginLeft = "3%"
         document.getElementById("logo").style.marginRight = "0"
         document.getElementById("contact_us").classList.add("hide");
+        document.getElementById("popup").style.width = "85vw";
+        document.getElementById("popup_main_div").style.width = "85vw";
+        document.getElementById("popup_content_main_div").style.width = "80vw";
+        var popupContentTitle = document.getElementsByClassName("popup_content_title");
+        for (var i = 0; i < popupContentTitle.length; i ++) {
+            popupContentTitle[i].style.display = 'none';
+        }
     } else{
         titleDiv.style.width = "30%"
         navDiv.style.visibility = "visible";
@@ -51,16 +58,8 @@ function about_us(){
 }
 
 function toggleSocialMediaPopup(){
-    if(isMobile()){
-        document.getElementById("popup").style.width = "85vw";
-        document.getElementById("popup_main_div").style.width = "85vw";
-        document.getElementById("popup_content_main_div").style.width = "80vw";
-        document.getElementById("blur").classList.toggle("active");
-        document.getElementById("popup").classList.toggle("active");
-    }else{
-        document.getElementById("blur").classList.toggle("active");
-        document.getElementById("popup").classList.toggle("active");
-    }
+    document.getElementById("blur").classList.toggle("active");
+    document.getElementById("popup").classList.toggle("active");
 }
 
 function our_projects(){
@@ -73,4 +72,18 @@ function contact_us(){
 
 function toggleNavPane(){
     document.getElementById("sidebar").classList.toggle("active");
+}
+
+function openSocialMedia(type){
+    switch(type){
+        case "youtube":
+            //open youtube
+            break;
+        case "discord":
+            //open discord
+            break;
+        case "instagram":
+            //open instagram
+            break;
+    }
 }
