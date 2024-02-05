@@ -13,6 +13,7 @@
 	<div id="pseudo"></div>
 	<div class="main_container" id="blur">
 	<div class="main_content">
+		
 	<header class="header" >
 		<div class="titleDiv" id="titleDiv">
 			<img src="./assets/logo2-modified.png" id="logo" alt="Logo">
@@ -37,7 +38,7 @@
 			</nav>
 		</div>
 		<div class="contact_usDiv" id="contact_usDiv">
-			<div class="contact_usSubDiv" onclick="contact_us()">
+			<div class="contact_usSubDiv" onclick="toggleCurrentPage('contact_us')"">
 				<span onclick="toggleCurrentPage('contact_us')" class="navigators_butt" id="contact_us_img"><img src="./assets/icon/contact_us.svg" style="width: 30px;"></span>
 				<button id="contact_us_butt" class="navigators_butt" style="margin-top: 10px;" onclick="toggleCurrentPage('contact_us')">&nbsp;Contact</button>
 			</div>
@@ -68,15 +69,25 @@
 
 
 
-	<main class="main">
-
-		<div id="about_us_page">
+	<main id="main">
+		<div class="mainSubDiv" id="about_us_page">
+			about_us_page
 		</div>
 
-		<div id="our_projects_page">
+		<div class="mainSubDiv" id="our_projects_page">
+			our_projects_page
 		</div>
+			
+		<div class="mainSubDiv" id="contact_us_page">
+			<div style="height: 100%; width: 100%; display: flex; flex-direction: column;">
+				<div id="contact_usTitleDiv">
+					<h1>Contact Us</h1>
+				</div>
 
-		<div id="contact_us_page">
+				<div id="contact_usDetailsDiv">
+
+				</div>
+			<div>
 		</div>
 	</main>
 
@@ -122,5 +133,4 @@
 	</div>
 	<script src="script.js"></script>
 </body>
-
 </html>

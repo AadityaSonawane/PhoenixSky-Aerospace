@@ -1,4 +1,5 @@
 deviceWidth = window.innerWidth;
+deviceHeight = window.innerHeight;
 portrait = window.matchMedia("(orientation: portrait)").matches;
 currentPage = "about_us";
 
@@ -6,6 +7,9 @@ let navDiv = document.getElementById("navDiv");
 let contact_usDiv = document.getElementById("contact_usDiv");
 let titleDiv = document.getElementById("titleDiv");
 let navMobileDiv = document.getElementById("navMobileDiv");
+
+mainHeight = (0.95*deviceHeight) - 80;
+document.getElementById("main").style.height = mainHeight + "px";
 
 var isMobile = function() {
     let check = false;
@@ -82,6 +86,7 @@ function toggleCurrentPage(currentPage){
             our_projects.visibility = "hidden";
             contact_us.display = "none";
             contact_us.visibility = "hidden";
+            document.getElementById("sidebar").classList.remove("active");
             break;
         case "our_projects":
             about_us.display = "none";
@@ -90,6 +95,7 @@ function toggleCurrentPage(currentPage){
             our_projects.visibility = "visible";
             contact_us.display = "none";
             contact_us.visibility = "hidden";
+            document.getElementById("sidebar").classList.remove("active");
             break;
         case "contact_us":
             about_us.display = "none";

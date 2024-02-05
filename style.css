@@ -247,8 +247,10 @@ ul{
   user-select: none;
 }
 
-.main{
+#main{
   display: flex;
+  width: 100vw;
+  height: 100%;
 }
 
 #popup{
@@ -401,4 +403,27 @@ ul{
   align-items: center;
   justify-content: center;
   margin: 5%;
+}
+
+.mainSubDiv{
+  width: 100%;
+  display: flex;
+}
+
+#contact_usTitleDiv{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  display:inline-flex;
+}
+
+#contact_usTitleDiv h1{
+  font-size: 50px;
+  font-family: regular;
+  color:#000000; 
+  margin-bottom: 0;
+  align-self: center;
+  background-color: transparent;
+  vertical-align: middle;
 }
