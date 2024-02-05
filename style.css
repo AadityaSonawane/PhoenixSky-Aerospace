@@ -262,6 +262,7 @@ ul{
   flex-direction: column;
   padding-top: 20px;
   padding-right: 25px;
+  background-color: #FFF;
 
   visibility: hidden;
   opacity: 0;
@@ -279,6 +280,7 @@ ul{
   padding-right: 0;
   display: flex;
   flex-direction: column;
+  background: transparent;
   width:fit-content;
 }
 

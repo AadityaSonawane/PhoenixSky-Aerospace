@@ -22,28 +22,28 @@
 			<nav class="navigationPane">
 				<ul style="height: 9.5vh;">
 					<li class="nav_bar_list_items">
-						<span onclick="about_us()" class="navigators_butt_ico"><img src="./assets/icon/about_us.svg"></span>
-						<button class="navigators_butt" onclick="about_us()">About</button> 
+						<span onclick="toggleCurrentPage('about_us')" class="navigators_butt_ico"><img src="./assets/icon/about_us.svg"></span>
+						<button class="navigators_butt" onclick="toggleCurrentPage('about_us')">About</button> 
 					</li>
 					<li class="nav_bar_list_items">
 						<span onclick="toggleSocialMediaPopup()" class="navigators_butt_ico"><img src="./assets/icon/join_us.svg"></span>
 						<button class="navigators_butt" id="join_us" onclick="toggleSocialMediaPopup()">Join Us</button> 
 					</li>
 					<li class="nav_bar_list_items">
-						<span onclick="our_projects()" class="navigators_butt_ico"><img src="./assets/icon/our_projects.svg"></span>
-						<button class="navigators_butt" onclick="our_projects()">Our Projects</button>
+						<span onclick="toggleCurrentPage('our_projects')" class="navigators_butt_ico"><img src="./assets/icon/our_projects.svg"></span>
+						<button class="navigators_butt" onclick="toggleCurrentPage('our_projects')">Our Projects</button>
 					</li>
 				</ul>
 			</nav>
 		</div>
 		<div class="contact_usDiv" id="contact_usDiv">
 			<div class="contact_usSubDiv" onclick="contact_us()">
-				<span onclick="contact_us()" class="navigators_butt" id="contact_us_img"><img src="./assets/icon/contact_us.svg" style="width: 30px;"></span>
-				<button id="contact_us" class="navigators_butt" style="margin-top: 10px;" onclick="contact_us()">&nbsp;Contact</button>
+				<span onclick="toggleCurrentPage('contact_us')" class="navigators_butt" id="contact_us_img"><img src="./assets/icon/contact_us.svg" style="width: 30px;"></span>
+				<button id="contact_us_butt" class="navigators_butt" style="margin-top: 10px;" onclick="toggleCurrentPage('contact_us')">&nbsp;Contact</button>
 			</div>
 		</div>
 		<div class="navMobileDiv" id="navMobileDiv">
-			<div class="navMobileSubDiv" onclick="open_navPane()">
+			<div class="navMobileSubDiv">
 				<span onclick="toggleNavPane()" class="navigators_butt" id="contact_us_img"><img src="./assets/icon/hamburger.svg" style="width: 30px;"></span>
 			</div>
 			<ul id="sidebar">
@@ -51,16 +51,16 @@
 					<span onclick="toggleNavPane()" class="navigators_butt_ico" style="align-self: center;"><img src="./assets/icon/close.svg"></span>
 				</li>
 				<li class="nav_bar_list_items">
-					<span onclick="about_us()" class="navigators_butt_ico"><img src="./assets/icon/about_us.svg"></span>
-					<button class="navigators_butt" onclick="about_us()">About</button> 
+					<span onclick="toggleCurrentPage('about_us')" class="navigators_butt_ico"><img src="./assets/icon/about_us.svg"></span>
+					<button class="navigators_butt" onclick="toggleCurrentPage('about_us')">About</button> 
 				</li>
 				<li class="nav_bar_list_items">
 					<span onclick="toggleSocialMediaPopup()" class="navigators_butt_ico"><img src="./assets/icon/join_us.svg"></span>
 					<button class="navigators_butt" id="join_us" onclick="toggleSocialMediaPopup()">Join Us</button> 					
 				</li>
 				<li class="nav_bar_list_items">
-					<span onclick="our_projects()" class="navigators_butt_ico"><img src="./assets/icon/our_projects.svg"></span>
-					<button class="navigators_butt" onclick="our_projects()">Our Projects</button>
+					<span onclick="toggleCurrentPage('our_projects')" class="navigators_butt_ico"><img src="./assets/icon/our_projects.svg"></span>
+					<button class="navigators_butt" onclick="toggleCurrentPage('our_projects')">Our Projects</button>
 				</li>
 			</ul>
 		</div>
@@ -69,7 +69,15 @@
 
 
 	<main class="main">
-		<!-- Main Content Here -->
+
+		<div id="about_us_page">
+		</div>
+
+		<div id="our_projects_page">
+		</div>
+
+		<div id="contact_us_page">
+		</div>
 	</main>
 
 
